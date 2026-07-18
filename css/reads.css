@@ -1,0 +1,40 @@
+.reads{
+  width: 93%; 
+  height: 287px;
+  margin: 40px auto;
+  direction: rtl;
+}
+.title{
+    max-width: 1300px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+.card{
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3ms;
+} 
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 15px rgba(0, 0, 0,0.1 );
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card p{
+    font-size: 13px;
+    padding: 10px;
+    line-height: 1.6;
+    font-family: var(--font-family);
+}

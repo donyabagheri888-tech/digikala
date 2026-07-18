@@ -1,0 +1,185 @@
+body{
+    height: 100vh;
+    direction: rtl;
+    font-family: var(--font-family);
+}
+.menu-center{
+    max-width: 1630px;
+    height: 100%;
+    margin: 0 auto;
+    .menu-center-nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+       
+        .menu-nav-item{
+            width: fit-content;
+            height: 100%;
+            position: relative;
+            z-index: 10;
+            .menu-nav-item:hover{
+                z-index: 10;
+            }
+            .menu-nav-link{
+                display: block;
+                width: 100%;
+                height: 100%;
+                padding: 0 10px;
+                text-align: center;
+                line-height: 40px;
+                text-decoration: none;
+                color: #3F4064;
+                font-size: 16px;
+                transition: 300ms;
+                &:hover{
+                    color: deeppink;
+                }
+
+            }
+            .submenu{
+                width: 70vw;  
+                height: 70vh;
+                background-color: whitesmoke;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                position: absolute;
+                display: none;
+                top: 100%;
+                right: 0;
+                z-index: 999;
+                overflow: hidden;
+                .submenu-right{
+                    width: 15%;
+                    height:100% ;
+                    background-color: #F0F0F1;
+                    overflow: auto;
+                    direction: ltr;
+                    .submenu-right-item{
+                        width: 100%;
+                        height: 40px;
+                        .submenu-right-link{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            color: #62666E;
+                            text-align: right;
+                            font-size: 13px;
+                            text-decoration: none;
+                            padding-right: 5px;
+                            line-height: 40px;
+                            box-sizing: border-box;
+                            &:hover{
+                                background-color:white ;
+                            }
+
+                        }
+                        .submenu-submenu{
+                            width: 85%;
+                            height: 100%;
+                            position: absolute;
+                            background-color:#FFFFFF ;
+                            left: 0;
+                            top: 0;
+                            display: none;
+
+
+                        }
+                        &:hover .submenu-submenu{
+                            display:block ;
+
+                        }
+                    }
+                    .sub-menu {
+                        display: flex;
+                        direction: rtl;
+                      }
+                      
+                      /* سمت چپ */
+                      .sub-menu-left {
+                        display: flex;
+                        gap: 50px;
+                        padding: 20px;
+                        flex: 3;
+                        flex-wrap: wrap;
+                        overflow: auto;
+                      }
+                      
+                      /* هر ستون */
+                      .column {
+                        display: flex !important;
+                        flex-direction: column !important;
+                        min-width: 150px;
+                        gap: 10px;
+                        align-items: flex-start;
+                      }
+                      
+                      /* عنوان */
+                      .column h5 {
+                        width: 100%;
+                        font-size: 20px;
+                        font-weight: 20;
+                        margin-bottom: 12px;
+                        position: relative;
+                        color: #111;
+                        padding-right: 10px;
+                      }
+                      .column h5:not(:first-child){
+                        margin-top: 15px;
+
+                      }
+                     
+                      
+                      /* خط قرمز کنار عنوان مثل دیجی کالا */
+                      .column h5::before {
+                        content: "";
+                        width: 2px;
+                        height: 14px;
+                        background-color: red;
+                        position: absolute;
+                        right: 0;
+                        top: 3px;
+                      }
+                      
+                      /* لیست */
+                      .column ul {
+                        width: 100%;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 15px;
+                        border-radius: 8px;
+                        padding: 8px;
+                      }
+                      
+                      .column ul li {
+                        font-size: 14px;
+                        color: #555;
+                        margin-bottom: 8px;
+                        cursor: pointer;
+                        transition: 0.2s;
+                        line-height: 2;
+                      }
+                      
+                      /* هاور */
+                      .column ul li:hover {
+                        color: red;
+                      }
+                   
+
+                    
+
+
+                }
+              }
+               
+             
+              &:hover .submenu{
+                display: block;
+
+              }
+        }
+    }
+}
+.active{
+    display: block !important;
+}
+

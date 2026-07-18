@@ -1,0 +1,21 @@
+.category-image2{
+    width: 100%;
+    height: 264px;
+    margin: 5px 0;
+}
+.category-image2 .category-image2-center{
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.category-image2 .category-image2-center .category-image2-center-item{
+    width: fit-content ;
+    height: 100% ;
+}
+.category-image2 .category-image2-center .category-image2-center-item img{
+    height: 264px;
+    border-radius: 16px;
+}

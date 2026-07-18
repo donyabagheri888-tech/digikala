@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Dast;
+    src: url(../fonts/fa/Yekan.ttf);
+}
+:root{
+    --font-family:Dast;
+}
+.swiper-button-next,.swiper-button-prev{
+    width:40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid lightgray
+}
+.swiper-navigation-icon{
+    width: 10px !important;
+    height: 10px !important;
+    path{
+        fill: black;
+    }
+}
+
+.swiper-button-disabled {
+    display: none !important;
+}
+
+.swiper-pagination-bullet{
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+    width: 30px !important;
+    height: 5px !important;
+    background-color: white !important;
+    border-radius: 3px !important;
+    transition: 300ms !important;
+}
+.supermarket .supermarket-left .more-box .more-arrow{
+    path{
+        fill: green;
+        margin-left: 10px;  
+    }
+}
